@@ -1,0 +1,27 @@
+.scale-img {
+    height: 300px;
+    width: 300px;
+    border: 10px solid #f00;
+    overflow: hidden;
+    position: relative;
+}
+.scale-img img {
+    height: 100%;
+    transition: all 0.3s ease-out;
+}
+.scale-img:hover img {
+    transform: scale(1.5);
+}
+.scale-img .caption {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(225,225,225,0.6);
+    text-align: center;
+    color: yellow;
+    top: 100%;
+    transition: all 0.3s ease-out;
+}
+.scale-img:hover .caption {
+    top: 0;
+}
